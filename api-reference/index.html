@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://grayzcale.github.io/simplepath/api-reference/">
+        <link rel="canonical" href="https://blackinkq.github.io/simplepath/api-reference/">
       
       
         <link rel="prev" href="..">
@@ -18,8 +18,12 @@
       
         <link rel="next" href="../guides/getting-started/">
       
+      
+        
+      
+      
       <link rel="icon" href="../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -27,14 +31,17 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.558e4712.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
+
     
+    
+      
     
     
       
@@ -48,11 +55,10 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
-    
     
     
   </head>
@@ -65,11 +71,8 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="deep-orange">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-orange">
   
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -89,7 +92,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="SimplePath" class="md-header__button md-logo" aria-label="SimplePath" data-md-component="logo">
       
@@ -97,7 +102,8 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,38 +122,51 @@
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="deep-orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
-          
-        
-      </form>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -158,16 +177,17 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
-        <a href="https://github.com/grayzcale/simplepath" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/blackinkq/simplepath" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    grayzcale/simplepath
+    blackinkq/simplepath
   </div>
 </a>
       </div>
@@ -194,6 +214,7 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="SimplePath" class="md-nav__button md-logo" aria-label="SimplePath" data-md-component="logo">
@@ -205,13 +226,13 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/grayzcale/simplepath" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/blackinkq/simplepath" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
-    grayzcale/simplepath
+    blackinkq/simplepath
   </div>
 </a>
     </div>
@@ -220,14 +241,26 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Home
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
@@ -235,26 +268,51 @@
     
       
       
-      
-
   
   
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          API Reference
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        API Reference
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
       </a>
       
         
@@ -272,7 +330,11 @@
       
         <li class="md-nav__item">
   <a href="#configuration" class="md-nav__link">
-    Configuration
+    <span class="md-ellipsis">
+      
+        Configuration
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Configuration">
@@ -280,21 +342,33 @@
         
           <li class="md-nav__item">
   <a href="#time_variance" class="md-nav__link">
-    TIME_VARIANCE
+    <span class="md-ellipsis">
+      
+        TIME_VARIANCE
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#comparison_checks" class="md-nav__link">
-    COMPARISON_CHECKS
+    <span class="md-ellipsis">
+      
+        COMPARISON_CHECKS
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#jump_when_stuck" class="md-nav__link">
-    JUMP_WHEN_STUCK
+    <span class="md-ellipsis">
+      
+        JUMP_WHEN_STUCK
+      
+    </span>
   </a>
   
 </li>
@@ -306,7 +380,11 @@
       
         <li class="md-nav__item">
   <a href="#errortypes" class="md-nav__link">
-    ErrorTypes
+    <span class="md-ellipsis">
+      
+        ErrorTypes
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="ErrorTypes">
@@ -314,28 +392,44 @@
         
           <li class="md-nav__item">
   <a href="#limitreached" class="md-nav__link">
-    LimitReached
+    <span class="md-ellipsis">
+      
+        LimitReached
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#targetunreachable" class="md-nav__link">
-    TargetUnreachable
+    <span class="md-ellipsis">
+      
+        TargetUnreachable
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#computationerror" class="md-nav__link">
-    ComputationError
+    <span class="md-ellipsis">
+      
+        ComputationError
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#agentstuck" class="md-nav__link">
-    AgentStuck
+    <span class="md-ellipsis">
+      
+        AgentStuck
+      
+    </span>
   </a>
   
 </li>
@@ -347,7 +441,11 @@
       
         <li class="md-nav__item">
   <a href="#statustypes" class="md-nav__link">
-    StatusTypes
+    <span class="md-ellipsis">
+      
+        StatusTypes
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="StatusTypes">
@@ -355,14 +453,22 @@
         
           <li class="md-nav__item">
   <a href="#idle" class="md-nav__link">
-    Idle
+    <span class="md-ellipsis">
+      
+        Idle
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#active" class="md-nav__link">
-    Active
+    <span class="md-ellipsis">
+      
+        Active
+      
+    </span>
   </a>
   
 </li>
@@ -374,7 +480,11 @@
       
         <li class="md-nav__item">
   <a href="#static-methods" class="md-nav__link">
-    Static Methods
+    <span class="md-ellipsis">
+      
+        Static Methods
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Static Methods">
@@ -382,7 +492,11 @@
         
           <li class="md-nav__item">
   <a href="#getnearestcharacter" class="md-nav__link">
-    GetNearestCharacter
+    <span class="md-ellipsis">
+      
+        GetNearestCharacter
+      
+    </span>
   </a>
   
 </li>
@@ -394,7 +508,11 @@
       
         <li class="md-nav__item">
   <a href="#path" class="md-nav__link">
-    Path
+    <span class="md-ellipsis">
+      
+        Path
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Path">
@@ -402,14 +520,22 @@
         
           <li class="md-nav__item">
   <a href="#constructor" class="md-nav__link">
-    Constructor
+    <span class="md-ellipsis">
+      
+        Constructor
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#properties" class="md-nav__link">
-    Properties
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Properties">
@@ -417,21 +543,33 @@
         
           <li class="md-nav__item">
   <a href="#visualize" class="md-nav__link">
-    Visualize
+    <span class="md-ellipsis">
+      
+        Visualize
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#status" class="md-nav__link">
-    Status
+    <span class="md-ellipsis">
+      
+        Status
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#lasterror" class="md-nav__link">
-    LastError
+    <span class="md-ellipsis">
+      
+        LastError
+      
+    </span>
   </a>
   
 </li>
@@ -443,7 +581,11 @@
         
           <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
-    Methods
+    <span class="md-ellipsis">
+      
+        Methods
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Methods">
@@ -451,21 +593,33 @@
         
           <li class="md-nav__item">
   <a href="#run" class="md-nav__link">
-    Run
+    <span class="md-ellipsis">
+      
+        Run
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#stop" class="md-nav__link">
-    Stop
+    <span class="md-ellipsis">
+      
+        Stop
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#destroy" class="md-nav__link">
-    Destroy
+    <span class="md-ellipsis">
+      
+        Destroy
+      
+    </span>
   </a>
   
 </li>
@@ -477,7 +631,11 @@
         
           <li class="md-nav__item">
   <a href="#events" class="md-nav__link">
-    Events
+    <span class="md-ellipsis">
+      
+        Events
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Events">
@@ -485,35 +643,55 @@
         
           <li class="md-nav__item">
   <a href="#reached" class="md-nav__link">
-    Reached
+    <span class="md-ellipsis">
+      
+        Reached
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#waypointreached" class="md-nav__link">
-    WaypointReached
+    <span class="md-ellipsis">
+      
+        WaypointReached
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#blocked" class="md-nav__link">
-    Blocked
+    <span class="md-ellipsis">
+      
+        Blocked
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#error" class="md-nav__link">
-    Error
+    <span class="md-ellipsis">
+      
+        Error
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#stopped" class="md-nav__link">
-    Stopped
+    <span class="md-ellipsis">
+      
+        Stopped
+      
+    </span>
   </a>
   
 </li>
@@ -538,112 +716,192 @@
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
-          Guides
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Guides" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Guides
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
           
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../guides/getting-started/" class="md-nav__link">
-        Getting Started
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
-          Examples
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Examples" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Examples
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
           
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Examples
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../examples/humanoid/" class="md-nav__link">
-        Humanoid
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Humanoid
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../examples/non-humanoid/" class="md-nav__link">
-        Non-Humanoid
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-Humanoid
+  
+
+    
+  </span>
+  
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -674,7 +932,11 @@
       
         <li class="md-nav__item">
   <a href="#configuration" class="md-nav__link">
-    Configuration
+    <span class="md-ellipsis">
+      
+        Configuration
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Configuration">
@@ -682,21 +944,33 @@
         
           <li class="md-nav__item">
   <a href="#time_variance" class="md-nav__link">
-    TIME_VARIANCE
+    <span class="md-ellipsis">
+      
+        TIME_VARIANCE
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#comparison_checks" class="md-nav__link">
-    COMPARISON_CHECKS
+    <span class="md-ellipsis">
+      
+        COMPARISON_CHECKS
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#jump_when_stuck" class="md-nav__link">
-    JUMP_WHEN_STUCK
+    <span class="md-ellipsis">
+      
+        JUMP_WHEN_STUCK
+      
+    </span>
   </a>
   
 </li>
@@ -708,7 +982,11 @@
       
         <li class="md-nav__item">
   <a href="#errortypes" class="md-nav__link">
-    ErrorTypes
+    <span class="md-ellipsis">
+      
+        ErrorTypes
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="ErrorTypes">
@@ -716,28 +994,44 @@
         
           <li class="md-nav__item">
   <a href="#limitreached" class="md-nav__link">
-    LimitReached
+    <span class="md-ellipsis">
+      
+        LimitReached
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#targetunreachable" class="md-nav__link">
-    TargetUnreachable
+    <span class="md-ellipsis">
+      
+        TargetUnreachable
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#computationerror" class="md-nav__link">
-    ComputationError
+    <span class="md-ellipsis">
+      
+        ComputationError
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#agentstuck" class="md-nav__link">
-    AgentStuck
+    <span class="md-ellipsis">
+      
+        AgentStuck
+      
+    </span>
   </a>
   
 </li>
@@ -749,7 +1043,11 @@
       
         <li class="md-nav__item">
   <a href="#statustypes" class="md-nav__link">
-    StatusTypes
+    <span class="md-ellipsis">
+      
+        StatusTypes
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="StatusTypes">
@@ -757,14 +1055,22 @@
         
           <li class="md-nav__item">
   <a href="#idle" class="md-nav__link">
-    Idle
+    <span class="md-ellipsis">
+      
+        Idle
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#active" class="md-nav__link">
-    Active
+    <span class="md-ellipsis">
+      
+        Active
+      
+    </span>
   </a>
   
 </li>
@@ -776,7 +1082,11 @@
       
         <li class="md-nav__item">
   <a href="#static-methods" class="md-nav__link">
-    Static Methods
+    <span class="md-ellipsis">
+      
+        Static Methods
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Static Methods">
@@ -784,7 +1094,11 @@
         
           <li class="md-nav__item">
   <a href="#getnearestcharacter" class="md-nav__link">
-    GetNearestCharacter
+    <span class="md-ellipsis">
+      
+        GetNearestCharacter
+      
+    </span>
   </a>
   
 </li>
@@ -796,7 +1110,11 @@
       
         <li class="md-nav__item">
   <a href="#path" class="md-nav__link">
-    Path
+    <span class="md-ellipsis">
+      
+        Path
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Path">
@@ -804,14 +1122,22 @@
         
           <li class="md-nav__item">
   <a href="#constructor" class="md-nav__link">
-    Constructor
+    <span class="md-ellipsis">
+      
+        Constructor
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#properties" class="md-nav__link">
-    Properties
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Properties">
@@ -819,21 +1145,33 @@
         
           <li class="md-nav__item">
   <a href="#visualize" class="md-nav__link">
-    Visualize
+    <span class="md-ellipsis">
+      
+        Visualize
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#status" class="md-nav__link">
-    Status
+    <span class="md-ellipsis">
+      
+        Status
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#lasterror" class="md-nav__link">
-    LastError
+    <span class="md-ellipsis">
+      
+        LastError
+      
+    </span>
   </a>
   
 </li>
@@ -845,7 +1183,11 @@
         
           <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
-    Methods
+    <span class="md-ellipsis">
+      
+        Methods
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Methods">
@@ -853,21 +1195,33 @@
         
           <li class="md-nav__item">
   <a href="#run" class="md-nav__link">
-    Run
+    <span class="md-ellipsis">
+      
+        Run
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#stop" class="md-nav__link">
-    Stop
+    <span class="md-ellipsis">
+      
+        Stop
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#destroy" class="md-nav__link">
-    Destroy
+    <span class="md-ellipsis">
+      
+        Destroy
+      
+    </span>
   </a>
   
 </li>
@@ -879,7 +1233,11 @@
         
           <li class="md-nav__item">
   <a href="#events" class="md-nav__link">
-    Events
+    <span class="md-ellipsis">
+      
+        Events
+      
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Events">
@@ -887,35 +1245,55 @@
         
           <li class="md-nav__item">
   <a href="#reached" class="md-nav__link">
-    Reached
+    <span class="md-ellipsis">
+      
+        Reached
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#waypointreached" class="md-nav__link">
-    WaypointReached
+    <span class="md-ellipsis">
+      
+        WaypointReached
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#blocked" class="md-nav__link">
-    Blocked
+    <span class="md-ellipsis">
+      
+        Blocked
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#error" class="md-nav__link">
-    Error
+    <span class="md-ellipsis">
+      
+        Error
+      
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#stopped" class="md-nav__link">
-    Stopped
+    <span class="md-ellipsis">
+      
+        Stopped
+      
+    </span>
   </a>
   
 </li>
@@ -940,13 +1318,14 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
-  
-  
 
+  
+  
 
 
   <h1>API Reference</h1>
@@ -987,10 +1366,10 @@
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Path</span><span class="p">.</span><span class="n">Error</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">errorType</span><span class="p">)</span>
-    <span class="kr">if</span> <span class="n">errorType</span> <span class="o">==</span> <span class="n">SimplePath</span><span class="p">.</span><span class="n">ErrorType</span><span class="p">.</span><span class="n">ComputationError</span> <span class="kr">then</span>
-        <span class="c1">--code (1)</span>
-    <span class="kr">end</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nv">Path</span><span class="p">.</span><span class="py">Error</span><span class="p">:</span><span class="nf">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="nv">errorType</span><span class="p">)</span>
+<span class="w">    </span><span class="kr">if</span><span class="w"> </span><span class="nv">errorType</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">SimplePath</span><span class="p">.</span><span class="py">ErrorType</span><span class="p">.</span><span class="py">ComputationError</span><span class="w"> </span><span class="kr">then</span>
+<span class="w">        </span><span class="c1">--code (1)</span>
+<span class="w">    </span><span class="kr">end</span>
 <span class="kr">end</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <ol>
@@ -1176,11 +1555,19 @@
 
 
 
+
+
+
+
+
+
+
                 
               </article>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -1208,10 +1595,14 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
