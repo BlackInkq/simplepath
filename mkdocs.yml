@@ -1,7 +1,7 @@
 site_name: "SimplePath"
-site_url: https://grayzcale.github.io/simplepath/
-repo_url: https://github.com/grayzcale/simplepath
-repo_name: grayzcale/simplepath
+site_url: https://blackinkq.github.io/simplepath/
+repo_url: https://github.com/blackinkq/simplepath
+repo_name: blackinkq/simplepath
 site_description: SimplePath is an open-source pathfinding module that gives you the ability to quickly create a pathfinding script for humanoids and non-humanoids with just a few lines of code.
 
 # Local
